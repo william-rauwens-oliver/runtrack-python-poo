@@ -1,7 +1,9 @@
 class Operation:
-    pass
+    def __init__(self, nombre1=0, nombre2=0):
+        self.nombre1 = nombre1
+        self.nombre2 = nombre2
+        
+operation_instance = Operation()
 
-nombre1 = Operation()
-nombre2 = Operation()
-
-print(nombre1, nombre2)
+# Résultat de l'objet en console
+print(operation_instance)
