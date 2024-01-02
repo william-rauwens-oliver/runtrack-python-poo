@@ -22,3 +22,16 @@ class Cercle:
 # Création des cercles avec des rayons 4 et 7
 cercle1 = Cercle(4)
 cercle2 = Cercle(7)
+
+# Affichage des informations, circonférence, diamètre et aire pour chaque cercle
+print("Cercle 1:")
+cercle1.afficherInfos()
+print(f"Circonférence : {cercle1.circonference()}")
+print(f"Diamètre : {cercle1.diametre()}")
+print(f"Aire : {cercle1.aire()}\n")
+
+print("Cercle 2:")
+cercle2.afficherInfos()
+print(f"Circonférence : {cercle2.circonference()}")
+print(f"Diamètre : {cercle2.diametre()}")
+print(f"Aire : {cercle2.aire()}")
