@@ -9,7 +9,10 @@ class Cercle:
         self.rayon = nouveau_rayon
 
     def afficherInfos(self):
-        print(f"Rayon du cercle : {self.rayon}")
+        print(f"Rayon du cercle : {self.rayon}\n"
+                 f"Circonférence : {self.circonference()}\n"
+                 f"Diamètre : {self.diametre()}\n"
+                 f"Aire : {self.aire()}")
 
     def circonference(self):
         return 2 * math.pi * self.rayon
@@ -24,15 +27,9 @@ class Cercle:
 cercle1 = Cercle(4)
 cercle2 = Cercle(7)
 
-# Affichage des informations, circonférence, diamètre et aire pour chaque cercle
+# Affichage des informations pour chaque cercle
 print("Cercle 1:")
 cercle1.afficherInfos()
-print(f"Circonférence : {cercle1.circonference()}")
-print(f"Diamètre : {cercle1.diametre()}")
-print(f"Aire : {cercle1.aire()}\n")
 
-print("Cercle 2:")
+print("\nCercle 2:")
 cercle2.afficherInfos()
-print(f"Circonférence : {cercle2.circonference()}")
-print(f"Diamètre : {cercle2.diametre()}")
-print(f"Aire : {cercle2.aire()}")
