@@ -4,8 +4,9 @@ class Animal():
         self.age = age
 
     def veillir(self):
-        self.age = input("Quel est l'age de votre animal :")
-        self.age =+1
+        new_age = int(input("Quel est l'age de votre animal :"))
+        print("Age de base : ",new_age)
+        self.age = new_age+1
         print("Animal a", self.age)
     
     def nommer(self):
