@@ -1,4 +1,5 @@
 class Animal:
+    
     def __init__(self, age=0):
         self.age = age
         self.prenom = ""
