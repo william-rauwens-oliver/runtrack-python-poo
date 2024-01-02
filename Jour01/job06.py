@@ -1,7 +1,6 @@
 class Animal:
-    
-    def __init__(self, age=0):
-        self.age = age
+    def __init__(self):
+        self.age = 0
         self.prenom = ""
 
     def vieillir(self):
@@ -10,18 +9,12 @@ class Animal:
     def nommer(self, nom):
         self.prenom = nom
 
-age_saisi = int(input("Entrez l'âge de l'animal : "))
+mon_animal = Animal()
 
-mon_animal = Animal(age=age_saisi)
-
-print("L'âge de l'animal avant l'appel de la méthode vieillir:", mon_animal.age, "ans")
+print("Âge initial de l'animal :", mon_animal.age)
 
 mon_animal.vieillir()
+print("Âge de l'animal après vieillissement :", mon_animal.age)
 
-print("L'âge de l'animal après l'appel de la méthode vieillir:", mon_animal.age, "ans")
-
-nom_saisi = input("Entrez le nom de l'animal : ")
-
-mon_animal.nommer(nom_saisi)
-
-print("Le nom de l'animal est :", mon_animal.prenom)
+mon_animal.nommer("Fido")
+print("Nom de l'animal :", mon_animal.prenom)
