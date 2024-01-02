@@ -19,7 +19,7 @@ class Cercle:
     def diametre(self):
         return 2 * self.rayon
 
-# Création des cercles avec des rayons 4 et 7
+# Cercle de rayons 4 et 7
 cercle1 = Cercle(4)
 cercle2 = Cercle(7)
 
