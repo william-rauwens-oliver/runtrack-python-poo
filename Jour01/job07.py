@@ -18,16 +18,13 @@ class Personnage:
     def position(self):
         return (self.x, self.y)
 
-# Exemple d'utilisation
 if __name__ == "__main__":
-    # Initialiser un personnage à la position (0, 0)
+
     joueur = Personnage(0, 0)
 
-    # Déplacer le personnage
     joueur.droite()
     joueur.bas()
 
-    # Obtenir la position actuelle du personnage
     position_actuelle = joueur.position()
 
     print("Position actuelle du personnage:", position_actuelle)
