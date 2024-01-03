@@ -7,7 +7,7 @@ class Voiture:
         self.__en_marche = en_marche
         self.__reservoir = reservoir
 
-    # Mutateurs (setters) et assesseurs (getters) pour chaque attribut
+# Mutateurs (setters) et assesseurs (getters) pour chaque attribut
     def get_marque(self):
         return self.__marque
 
