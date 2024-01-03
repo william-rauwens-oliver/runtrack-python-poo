@@ -6,7 +6,7 @@ class Livre:
         self.__disponible = True
 
 # Assesseurs
-
+ 
     def get_titre(self):
         return self.__titre
 
@@ -34,9 +34,9 @@ class Livre:
             print("Erreur : Le nombre de pages demandé doit être un nombre entier positif !")
 
     def emprunter(self):
-        if self.est_disponible = False
+        if self.est_disponible():
             self.__disponible = False
-            print("Livre emprunté avec succés.")
+            print("Livre emprunté avec succès.")
         else:
             print("Erreur : Le livre ne peut pas etre emprunté.")
 
@@ -44,5 +44,14 @@ class Livre:
         if not self.est_disponible():
             self.__disponible = True
             print("Livre rendu avec succès.")
-        else :
-            print ("Erreur ! Le livre n'a pas été emprunté.")
+        else:
+            print("Erreur : Le livre n'a pas été emprunté.")
+
+livre1 = Livre("Titre du livre", "Auteur du livre", 200)
+print(f"Titre: {livre1.get_titre()}, Auteur: {livre1.get_auteur()}, Nombre de pages: {livre1.get_nombre_de_pages()}, Disponible: {livre1.est_disponible()}")
+
+livre1.emprunter()
+print(f"Disponible après emprunt: {livre1.est_disponible()}")
+
+livre1.rendre()
+print(f"Disponible après rendu: {livre1.est_disponible()}")
