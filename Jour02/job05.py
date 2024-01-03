@@ -42,7 +42,20 @@ class Voiture:
     def get_reservoir(self):
         return self.__reservoir
     
-#vérifie le niveau de carburant du reservoir
+# vérifie le niveau de carburant du reservoir
 
     def __verifier_plein_voiture(self):
         return self.__reservoir
+    
+# démarrage de la voiture
+
+    def demarrer(self):
+        if self.__verifier_plein() > 5:
+            self.__en_marche = True
+            print("La voiture a démarré.")
+        else:
+            print("Le réservoir est trop bas. La voiture ne peut pas démarrer.")
+
+    def arreter(self):
+        self.__en_marche = False
+        print("La voiture est arrêtée.")
