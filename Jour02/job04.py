@@ -19,7 +19,7 @@ class Student:
             return "Très bien"
         elif self.__credits >= 70:
             return "Bien"
-        elif self.__credits >=60
+        elif self.__credits >= 60:
             return "Passable"
         else: 
             return "Insuffisant"
