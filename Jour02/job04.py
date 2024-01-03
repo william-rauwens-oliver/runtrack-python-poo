@@ -6,3 +6,8 @@ class Student:
         self.__credits = credits
         self.__level = self._student_eval()
 
+    def add_credits(self, credits):
+        if credits > 0:
+            self.__credits += credits
+        else:
+            print("Erreur : Le nombre de crédits doit etre supérieur à zéro")
