@@ -11,3 +11,16 @@ class Student:
             self.__credits += credits
         else:
             print("Erreur : Le nombre de crédits doit etre supérieur à zéro")
+
+    def __student_eval(self):
+        if self.__credits >= 90:
+            return "Excellent"
+        elif self.__credits >= 80:
+            return "Très bien"
+        elif self.__credits >= 70:
+            return "Bien"
+        elif self.__credits >=60
+            return "Passable"
+        else: 
+            return "Insuffisant"
+        
