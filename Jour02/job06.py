@@ -18,7 +18,7 @@ class Commande:
 
     def afficher_commande(self):
         print(f"Commande #{self.__numero_commande}:")
-        for plat, details in self.__plats_commandes.items():  # Correction ici
+        for plat, details in self.__plats_commandes.items():
             print(f"{plat}: {details['prix']} € - Statut: {details['statut']}")
         total = self.__calculer_total()
         print(f"Total à payer: {total} €")
