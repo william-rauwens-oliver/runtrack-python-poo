@@ -29,11 +29,11 @@ class Livre:
         else:
             print("Erreur : Le nombre de pages demandé doit être un nombre entier positif !")
 
-livre1 = Livre("Titre du livre", "Auteur du livre", 200)
+livre1 = Livre("Paris", "Guy de Maupassant", 200)
 print(f"Titre: {livre1.get_titre()}, Auteur: {livre1.get_auteur()}, Nombre de pages: {livre1.get_nombre_de_pages()}")
 
-livre1.set_titre("Nouveau Titre")
-livre1.set_auteur("Nouvel Auteur")
+livre1.set_titre("Willy")
+livre1.set_auteur("Kevin")
 livre1.set_nombre_de_pages(300)
 
 print(f"Titre: {livre1.get_titre()}, Auteur: {livre1.get_auteur()}, Nombre de pages: {livre1.get_nombre_de_pages()}")

@@ -47,7 +47,7 @@ class Livre:
         else:
             print("Erreur : Le livre n'a pas été emprunté.")
 
-livre1 = Livre("Titre du livre", "Auteur du livre", 200)
+livre1 = Livre("Rio", "de Janeiro", 200)
 print(f"Titre: {livre1.get_titre()}, Auteur: {livre1.get_auteur()}, Nombre de pages: {livre1.get_nombre_de_pages()}, Disponible: {livre1.est_disponible()}")
 
 livre1.emprunter()
