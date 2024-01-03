@@ -41,3 +41,8 @@ class Voiture:
 
     def get_reservoir(self):
         return self.__reservoir
+    
+#vérifie le niveau de carburant du reservoir
+
+    def __verifier_plein_voiture(self):
+        return self.__reservoir
