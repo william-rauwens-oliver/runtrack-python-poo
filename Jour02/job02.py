@@ -14,3 +14,17 @@ class Livre:
 
     def get_nombre_de_pages(self):
         return self.__nombre_de_pages
+
+# Mutateurs
+
+    def set_titre(self, nouveau_titre):
+        self.__titre = nouveau_titre
+
+    def set_auteur(self, nouvel_auteur):
+        self.__auteur = nouvel_auteur
+
+    def set_nombre_de_pages(self, nouveau_nombre_de_pages):
+        if isinstance(nouveau_nombre_de_pages, int) and nouveau_nombre_de_pages > 0:
+            self.__nombre_de_pages = nouveau_nombre_de_pages
+        else:
+            print("Erreur : Le nombre de pages demandé doit être un nombre entier positif ")
