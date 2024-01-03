@@ -24,3 +24,8 @@ class Student:
         else: 
             return "Insuffisant"
         
+    def student_info(self):
+        print(f"Nom: {self.__nom}")
+        print(f"Prénom: {self.__prenom}")
+        print(f"Numéro d'étudiant: {self.__numero_etudiant}")
+        print(f"Niveau:{self.__level}")
