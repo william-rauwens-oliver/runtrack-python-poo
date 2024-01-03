@@ -50,7 +50,7 @@ class Voiture:
 # démarrage de la voiture
 
     def demarrer(self):
-        if self.__verifier_plein() > 5:
+        if self.__verifier_plein_voiture() > 5:
             self.__en_marche = True
             print("La voiture a démarré.")
         else:
@@ -59,3 +59,14 @@ class Voiture:
     def arreter(self):
         self.__en_marche = False
         print("La voiture est arrêtée.")
+
+ma_voiture = Voiture("McLaren", "720S", 2023, 3000)
+
+print(ma_voiture.get_marque())
+print(ma_voiture.get_modele())
+print(ma_voiture.get_annee())
+print(ma_voiture.get_en_marche())
+print(ma_voiture.get_reservoir())
+
+ma_voiture.demarrer()
+ma_voiture.arreter()
