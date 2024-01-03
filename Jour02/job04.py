@@ -29,3 +29,9 @@ class Student:
         print(f"Prénom: {self.__prenom}")
         print(f"Numéro d'étudiant: {self.__numero_etudiant}")
         print(f"Niveau:{self.__level}")
+
+john_doe = Student("Doe", "John", 145)
+john_doe.add_credits(30)
+john_doe.add_credits(25)
+john_doe.add_credits(20)
+john_doe.student_info()
