@@ -33,3 +33,16 @@ class Livre:
         else:
             print("Erreur : Le nombre de pages demandé doit être un nombre entier positif !")
 
+    def emprunter(self):
+        if self.est_disponible = False
+            self.__disponible = False
+            print("Livre emprunté avec succés.")
+        else:
+            print("Erreur : Le livre ne peut pas etre emprunté.")
+
+    def rendre(self):
+        if not self.est_disponible():
+            self.__disponible = True
+            print("Livre rendu avec succès.")
+        else :
+            print ("Erreur ! Le livre n'a pas été emprunté.")
