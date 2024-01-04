@@ -11,3 +11,11 @@ class ListeDeTaches:
     def ajouterTache(self, tache):
         self.taches.append(tache)
         print(f"Tâche ajoutée : {tache.titre}")
+
+    def supprimerTache(self, titre):
+        for tache in self.taches:
+            if tache.titre == titre:
+                self.taches.remove(tache)
+                print(f"Tâche supprimée : {tache.titre}")
+                return
+        print(f"Tâche introuvable : {titre}")
