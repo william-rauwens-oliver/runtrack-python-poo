@@ -19,3 +19,16 @@ class ListeDeTaches:
                 print(f"Tâche supprimée : {tache.titre}")
                 return
         print(f"Tâche introuvable : {titre}")
+
+    def tacheFinie(self, titre):
+        for tache in self.taches:
+            if tache.titre == titre:
+                tache.statut = "terminée"
+                print(f"Tache marquée comme terminée : {tache.titre}")
+                return
+            print{f"Tache introuvable : {titre}"}
+            
+    def afficherListe(self):
+        print("Liste des tâches :")
+        for tache in self.taches:
+            print(f"{tache.titre} - {tache.statut}")
