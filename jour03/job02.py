@@ -37,4 +37,11 @@ class CompteBancaire:
             print(f"Agios de {agios} EUR appliqués.")
             self.afficher_solde()
 
-
+    def virement(self, compte_destinataire, montant):
+        if self.__solde >= montant or self.__decouvert:
+            self.__solde -= montant
+            compte_destinataire.versement(montant)
+            print(f"Virement de {montant} EUR effectué avec succès.")
+            self.afficher_solde()
+        else:
+            print("Solde insuffisant. Virement annulé.")
