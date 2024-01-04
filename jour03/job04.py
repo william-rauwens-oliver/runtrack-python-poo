@@ -19,3 +19,4 @@ class Joueur:
 
     def recevoirUnCartonRouge(self):
         self.cartons_rouges += 1
+
