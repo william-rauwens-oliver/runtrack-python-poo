@@ -1,21 +1,24 @@
 class Ville:
     def __init__(self, nom, nombre_habitants):
-        self.nom = nom
-        self._nombre_habitants = nombre_habitants
+        self.__nom = nom
+        self.__nombre_habitants = nombre_habitants
+
     def get_nombre_habitants(self):
-        return self._nombre_habitants
+        return self.__nombre_habitants
+
     def ajouter_population(self):
-        self._nombre_habitants += 1
+        self.__nombre_habitants += 1
+
 
 class Personne:
     def __init__(self, prenom, age, ville):
-        self._prenom = prenom
-        self._age = age
-        self._ville = ville
+        self.__prenom = prenom
+        self.__age = age
+        self.__ville = ville
         ville.ajouter_population()
-        
+
     def ajouter_population(self):
-        self._ville.ajouter_population()
+        self.__ville.ajouter_population()
 
 paris = Ville("Paris", 1000000)
 print(f"Nombre d'habitants à Paris : {paris.get_nombre_habitants()}")
