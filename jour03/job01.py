@@ -9,7 +9,6 @@ class Ville:
     def ajouter_population(self):
         self.__nombre_habitants += 1
 
-
 class Personne:
     def __init__(self, prenom, age, ville):
         self.__prenom = prenom
