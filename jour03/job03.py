@@ -33,7 +33,7 @@ class ListeDeTaches:
         for tache in self.taches:
             print(f"{tache.titre} - {tache.statut}")
     
-        def agios(self, taux_agios):
+    def agios(self, taux_agios):
         if self.__solde < 0:
             agios = abs(self.__solde) * taux_agios
             self.__solde -= agios
