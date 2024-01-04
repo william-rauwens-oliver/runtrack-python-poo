@@ -14,3 +14,11 @@ class CompteBancaire:
         print(f"Découvert autorisé : {self.__decouvert}")
         print("\n")
 
+    def afficher_solde(self):
+        print(f"Le solde actuel est de : {self.__solde} EUR")
+
+    def versement(self, montant):
+        self.__solde += montant
+        print(f"Versement de {montant} EUR effectué avec succès.")
+        self.afficher_solde()
+
