@@ -39,17 +39,17 @@ class Equipe:
         joueur.cartons_jaunes += cartons_jaunes
         joueur.cartons_rouges += cartons_rouges
 
-joueur1 = Joueur("Joueur1", 10, "Attaquant")
-joueur2 = Joueur("Joueur2", 5, "Milieu")
-joueur3 = Joueur("Joueur3", 3, "Défenseur")
-joueur4 = Joueur("Joueur4", 7, "Attaquant")
-joueur5 = Joueur("Joueur5", 8, "Milieu")
-joueur6 = Joueur("Joueur6", 2, "Défenseur")
-joueur7 = Joueur("Joueur7", 11, "Attaquant")
-joueur8 = Joueur("Joueur8", 6, "Milieu")
-joueur9 = Joueur("Joueur9", 4, "Défenseur")
-joueur10 = Joueur("Joueur10", 9, "Attaquant")
-joueur11 = Joueur("Joueur11", 1, "Gardien")
+joueur1 = Joueur("Neymar Jr", 10, "Attaquant")
+joueur2 = Joueur("Kevin Mbappe", 5, "Milieu")
+joueur3 = Joueur("Raphael Varane", 3, "Défenseur")
+joueur4 = Joueur("Mohamed Salah", 7, "Attaquant")
+joueur5 = Joueur("Bruno Fernandes", 8, "Milieu")
+joueur6 = Joueur("Andrew Robertson", 2, "Défenseur")
+joueur7 = Joueur("Erling Haaland", 11, "Attaquant")
+joueur8 = Joueur("Joshua Kimmich", 6, "Milieu")
+joueur9 = Joueur("Ruben Dias", 4, "Défenseur")
+joueur10 = Joueur("Harry Kane", 9, "Attaquant")
+joueur11 = Joueur("Jan Oblak", 1, "Gardien")
 
 equipe1 = Equipe("ÉquipeC")
 equipe2 = Equipe("ÉquipeD")
