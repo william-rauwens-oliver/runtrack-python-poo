@@ -7,3 +7,13 @@ class Ville:
     def ajouter_population(self):
         self.get_nombre_habitants +=1
 
+class Personne:
+    def __init__(self, prenom, age, ville):
+            self._prenom = prenom
+            self._age = age
+            self.ville = ville
+            ville.ajouter_population()
+
+    def ajouter_population(self):
+         self._ville.ajouter_population()
+
