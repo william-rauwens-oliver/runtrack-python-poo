@@ -46,11 +46,11 @@ class CompteBancaire:
         else:
             print("Solde insuffisant. Virement annulé.")
 
-compte1 = CompteBancaire(numero_compte="12345", nom="Dupont", prenom="Jean", solde=1000)
+compte1 = CompteBancaire(numero_compte="12345", nom="Melina", prenom="Herrera", solde=1000)
 compte1.afficher()
 compte1.versement(500)
 compte1.retrait(200)
 compte1.agios(taux_agios=0.02)
-compte2 = CompteBancaire(numero_compte="67890", nom="Martin", prenom="Sophie", solde=-200, decouvert=True)
+compte2 = CompteBancaire(numero_compte="67890", nom="Kevin", prenom="Ngo", solde=-200, decouvert=True)
 compte2.afficher()
 compte1.virement(compte_destinataire=compte2, montant=1200)
