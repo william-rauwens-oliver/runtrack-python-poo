@@ -22,3 +22,19 @@ class CompteBancaire:
         print(f"Versement de {montant} EUR effectué avec succès.")
         self.afficher_solde()
 
+    def retrait(self, montant):
+        if self.__solde >= montant or self.__decouvert:
+            self.__solde -= montant
+            print(f"Retrait de {montant} EUR effectué avec succès.")
+            self.afficher_solde()
+        else:
+            print("Solde insuffisant. Opération annulée.")
+
+    def agios(self, taux_agios):
+        if self.__solde < 0:
+            agios = abs(self.__solde) * taux_agios
+            self.__solde -= agios
+            print(f"Agios de {agios} EUR appliqués.")
+            self.afficher_solde()
+
+
