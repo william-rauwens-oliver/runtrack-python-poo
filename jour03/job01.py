@@ -17,3 +17,12 @@ class Personne:
     def ajouter_population(self):
          self._ville.ajouter_population()
 
+paris = Ville("Paris", 1000000)
+print(f"Nombre d'habitants à Paris : {paris.get_nombre_habitants}")
+
+marseille = Ville("Marseille", 861635)
+print(f"Nombre d'habitant à Marseille : {marseille.get_nombre_habitants}",)
+
+john = Personne("John", 45, paris)
+myrtille = Personne("Myrtille", 4, paris)
+chloe = Personne("Chloé", 18, marseille)
