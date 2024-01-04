@@ -38,3 +38,28 @@ class Equipe:
         joueur.passes_decisives += passes_decisives
         joueur.cartons_jaunes += cartons_jaunes
         joueur.cartons_rouges += cartons_rouges
+
+joueur1 = Joueur("Joueur1", 10, "Attaquant")
+joueur2 = Joueur("Joueur2", 5, "Milieu")
+joueur3 = Joueur("Joueur3", 3, "Défenseur")
+
+equipe1 = Equipe("ÉquipeC")
+equipe2 = Equipe("ÉquipeD")
+
+equipe1.ajouterJoueur(joueur1)
+equipe1.ajouterJoueur(joueur2)
+equipe2.ajouterJoueur(joueur3)
+
+joueur1.marquerUnBut()
+joueur2.effectuerUnePasseDecisive()
+joueur3.recevoirUnCartonJaune()
+
+equipe1.afficherStatistiquesJoueurs()
+equipe2.afficherStatistiquesJoueurs()
+
+equipe1.mettreAJourStatistiquesJoueur(joueur1, buts=1)
+equipe1.mettreAJourStatistiquesJoueur(joueur2, passes_decisives=1)
+equipe2.mettreAJourStatistiquesJoueur(joueur3, cartons_jaunes=1)
+
+equipe1.afficherStatistiquesJoueurs()
+equipe2.afficherStatistiquesJoueurs()
