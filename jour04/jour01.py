@@ -2,15 +2,11 @@ class Personne:
     def __init__(self, age=14):
         self.age = age
 
-    def afficherAge(self):
-        print(f"L'âge de la personne est : {self.age} ans")
-
     def bonjour(self):
         print("Bonjour")
 
     def modifierAge(self, nouvel_age):
         self.age = nouvel_age
-
 
 class Eleve(Personne):
     def __init__(self, age=14):
@@ -28,18 +24,13 @@ class Professeur(Personne):
         self.matiereEnseignee = matiereEnseignee
 
     def enseigner(self):
-        print("Le cours va commencer")
-
-personne = Personne()
-personne.afficherAge()
-personne.bonjour()
+        print(f"Le cours de {self.matiereEnseignee} va commencer")
 
 eleve = Eleve()
-eleve.afficherAge()
+eleve.modifierAge(15)
 eleve.bonjour()
 eleve.allerEnCours()
-
-professeur = Professeur(matiereEnseignee="Mathématiques")
-professeur.afficherAge()
+eleve.afficherAge()
+professeur = Professeur(age=40, matiereEnseignee="Mathématiques")
 professeur.bonjour()
 professeur.enseigner()
