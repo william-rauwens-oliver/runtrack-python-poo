@@ -11,7 +11,6 @@ class Vehicule:
     def demarrer(self):
         print("Attention, je roule")
 
-
 class Voiture(Vehicule):
     def __init__(self, marque, modele, annee, prix, portes=3):
         super().__init__(marque, modele, annee, prix)
@@ -20,7 +19,6 @@ class Voiture(Vehicule):
     def informationsVehicule(self):
         super().informationsVehicule()
         print(f"Nombre de portes: {self.portes}")
-
 
 class Moto(Vehicule):
     def __init__(self, marque, modele, annee, prix, roues=2):
@@ -33,7 +31,6 @@ class Moto(Vehicule):
 
     def demarrer(self):
         print("Vroom, vroom ! Prêt à rouler en moto")
-
 
 voiture = Voiture(marque="Mazda", modele="MX-5", annee=2018, prix=33000)
 voiture.informationsVehicule()
