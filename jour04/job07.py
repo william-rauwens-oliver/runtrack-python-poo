@@ -17,3 +17,10 @@ class Jeu:
         paquet = [Carte(valeur, couleur) for valeur in valeurs for couleur in couleurs]
         random.shuffle(paquet)
         return paquet
+
+    def tirer_carte(self):
+        return self.paquet.pop()
+
+    def distribuer_cartes_initiales(self):
+        self.main_joueur = [self.tirer_carte(), self.tirer_carte()]
+        self.main_croupier = [self.tirer_carte(), self.tirer_carte()]
