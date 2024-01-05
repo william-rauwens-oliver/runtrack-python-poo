@@ -13,6 +13,9 @@ class Personne:
 
 
 class Eleve(Personne):
+    def __init__(self, age=14):
+        Personne.__init__(self, age)
+
     def allerEnCours(self):
         print("Je vais en cours")
 
@@ -24,7 +27,7 @@ class Professeur(Personne):
     def __init__(self, age=14, matiereEnseignee=""):
         Personne.__init__(self, age)
         self.matiereEnseignee = matiereEnseignee
-
+        
     def enseigner(self):
         print("Le cours va commencer")
 
