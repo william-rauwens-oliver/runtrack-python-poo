@@ -11,7 +11,6 @@ class Personne:
     def modifierAge(self, nouvel_age):
         self.age = nouvel_age
 
-
 class Eleve(Personne):
     def __init__(self, age=14):
         Personne.__init__(self, age)
