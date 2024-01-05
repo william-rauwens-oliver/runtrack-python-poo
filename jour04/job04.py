@@ -12,4 +12,4 @@ class Rectangle(Forme):
 
 rectangle = Rectangle(6, 13)
 resultat_aire = rectangle.aire()
-print(f"L'aire du rectangle est : {resultat_aire}")
+print(f"L'aire du rectangle demandé est : {resultat_aire}")
