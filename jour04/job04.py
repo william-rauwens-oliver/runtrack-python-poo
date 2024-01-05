@@ -9,3 +9,7 @@ class Rectangle(Forme):
 
     def aire(self):
         return self.largeur * self.hauteur
+
+rectangle = Rectangle(6, 13)
+resultat_aire = rectangle.aire()
+print(f"L'aire du rectangle est : {resultat_aire}")
