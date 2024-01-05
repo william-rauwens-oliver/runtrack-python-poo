@@ -7,7 +7,7 @@ class Carte:
 
 class Jeu:
     def __init__(self):
-        self.paquet = self.creer_paquet()
+        self.paquet_cartes = self.creer_paquet()
         self.main_joueur = []
         self.main_croupier = []
 
@@ -19,9 +19,9 @@ class Jeu:
         return paquet
 
     def tirer_carte(self):
-        return self.paquet.pop()
+        return self.paquet_cartes.pop()
 
-    def distribuer_cartes_initiales(self):
+    def distribuer_cartes(self):
         self.main_joueur = [self.tirer_carte(), self.tirer_carte()]
         self.main_croupier = [self.tirer_carte(), self.tirer_carte()]
 
@@ -35,16 +35,16 @@ class Jeu:
             
         return total_points
 
-    def afficher_main(self, main, joueur):
+    def afficher_principal(self, main, joueur):
         print(f"\nMain {joueur}:")
         for carte in main:
             print(f"{carte.valeur} de {carte.couleur}")
 
     def jouer_partie(self):
-        self.distribuer_cartes_initiales()
+        self.distribuer_cartes()
         
         while True:
-            self.afficher_main(self.main_joueur, "Joueur")
+            self.afficher_principal(self.main_joueur, "Joueur")
             choix = input("Voulez-vous prendre une carte ? (oui/non): ").lower()
             
             if choix == "oui":
@@ -60,8 +60,8 @@ class Jeu:
         while self.calculer_points(self.main_croupier) < 17:
             self.main_croupier.append(self.tirer_carte())
         
-        self.afficher_main(self.main_joueur, "Joueur")
-        self.afficher_main(self.main_croupier, "Croupier (Banque)")
+        self.afficher_principal(self.main_joueur, "Joueur")
+        self.afficher_principal(self.main_croupier, "Croupier (Banque)")
         
         points_joueur = self.calculer_points(self.main_joueur)
         points_croupier = self.calculer_points(self.main_croupier)
