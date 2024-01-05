@@ -19,3 +19,11 @@ class Eleve(Personne):
     def afficherAge(self):
         print(f"J'ai {self.age} ans")
 
+
+class Professeur(Personne):
+    def __init__(self, age=14, matiereEnseignee=""):
+        Personne.__init__(self, age)
+        self.matiereEnseignee = matiereEnseignee
+
+    def enseigner(self):
+        print("Le cours va commencer")
