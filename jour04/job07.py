@@ -57,3 +57,23 @@ class Jeu:
             else:
                 break
         
+        while self.calculer_points(self.main_croupier) < 17:
+            self.main_croupier.append(self.tirer_carte())
+        
+        self.afficher_main(self.main_joueur, "Joueur")
+        self.afficher_main(self.main_croupier, "Croupier (Banque)")
+        
+        points_joueur = self.calculer_points(self.main_joueur)
+        points_croupier = self.calculer_points(self.main_croupier)
+        
+        if points_joueur > 21:
+            print("Vous avez dépassé 21 points. Vous avez perdu.")
+        elif points_joueur > points_croupier or points_croupier > 21:
+            print("Félicitations ! Vous avez gagné.")
+        elif points_joueur == points_croupier:
+            print("Égalité, Personne ne gagne.")
+        else:
+            print("Désolé le croupier a gagné.")
+
+jeu_blackjack = Jeu()
+jeu_blackjack.jouer_partie()
