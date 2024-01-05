@@ -6,7 +6,7 @@ class Personne:
         print(f"L'âge de la personne est : {self.age} ans")
 
     def bonjour(self):
-        print("Hello")
+        print("Bonjour")
 
     def modifierAge(self, nouvel_age):
         self.age = nouvel_age
