@@ -39,3 +39,15 @@ class Parallelepipede(Rectangle):
 
     def volume(self):
         return self._longueur * self._largeur * self._hauteur
+
+rectangle1 = Rectangle(5, 8)
+print("Périmètre du rectangle:", rectangle1.perimetre())
+print("Surface du rectangle:", rectangle1.surface())
+
+rectangle1.set_longueur(6)
+rectangle1.set_largeur(10)
+print("Nouvelle longueur:", rectangle1.get_longueur())
+print("Nouvelle largeur:", rectangle1.get_largeur())
+
+parallelepiped1 = Parallelepipede(5, 8, 3)
+print("Volume du parallélépipède:", parallelepiped1.volume())
