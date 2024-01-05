@@ -24,13 +24,13 @@ class Professeur(Personne):
         self.matiereEnseignee = matiereEnseignee
 
     def enseigner(self):
-        print("Le cours de mathématiques va commencer")
+        print(f"Le cours de {self.matiereEnseignee} va commencer")
 
 eleve = Eleve()
 eleve.modifierAge(15)
 eleve.bonjour()
 eleve.allerEnCours()
 eleve.afficherAge()
-professeur = Professeur(age=40)
+professeur = Professeur(age=40, matiereEnseignee="Mathématiques")
 professeur.bonjour()
 professeur.enseigner()
