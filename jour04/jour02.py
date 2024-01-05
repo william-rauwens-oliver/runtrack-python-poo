@@ -21,10 +21,10 @@ class Eleve(Personne):
 class Professeur(Personne):
     def __init__(self, age=14, matiereEnseignee=""):
         Personne.__init__(self, age)
-        self.matiereEnseignee = matiereEnseignee
+        self.__matiereEnseignee = matiereEnseignee
 
     def enseigner(self):
-        print(f"Le cours de {self.matiereEnseignee} va commencer")
+        print(f"Le cours de {self.__matiereEnseignee} va commencer")
 
 eleve = Eleve()
 eleve.modifierAge(15)
