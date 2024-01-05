@@ -30,3 +30,13 @@ class Professeur(Personne):
 
     def enseigner(self):
         print("Le cours va commencer")
+
+eleve = Eleve()
+eleve.modifierAge(15)
+eleve.bonjour()
+eleve.allerEnCours()
+eleve.afficherAge()
+professeur = Professeur(age=40)
+professeur.bonjour()
+professeur.enseigner()
+professeur.afficherAge()
